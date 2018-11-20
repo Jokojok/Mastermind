@@ -20,7 +20,6 @@ public class Game {
 			sb.append(Pawn.randomPawn().toString());
 		}
 		toGuess = sb.toString();
-		System.out.println(toGuess);	// TODO : delete
 	}
 
 	public boolean jouer(String entry) {
