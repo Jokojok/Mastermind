@@ -13,7 +13,7 @@ public class Launcher {
 		while (inGame) {
 			game.show();
 			
-			System.out.println("Devinez les 4 pions : ");
+			System.out.println("Devinez les 4 pions en respectant le regex suivant ((R|J|B|O|V|N){4}) : ");
 			String entry="";
 			try {
 				entry = sc.next(Pattern.compile("(R|J|B|O|V|N){4}"));

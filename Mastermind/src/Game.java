@@ -48,8 +48,8 @@ public class Game {
 
 	private int hasMisplaced(String entry, int guessed) {
 		int response = 0;
-		for (char c : entry.toCharArray()) {
-			if (toGuess.contains(Character.toString(c)))
+		for (char c : toGuess.toCharArray()) {
+			if (entry.contains(Character.toString(c)))
 				response++;
 		}
 		return response - guessed;
